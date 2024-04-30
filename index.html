@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Mensuration et IMC - Acceuil</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <h1 class="navbarTitle">Gestionnaire de Mensurations</h1>
+            <a class="navbarLink" class="liens" href="courbes.html">Courbes</a>
+        </div>
+        <div class = "bMenu">
+            <div class = "line"></div>
+            <div class = "line"></div>
+            <div class = "line"></div>
+        </div>
+
+    </nav> 
+
+    <div class="container"
+    >
+        <h1>Bienvenue dans votre suivi de mensurations et de votre IMC.</h1>
+
+        <form action="POST">
+
+            <div class="name">
+
+                <label for="name" class="nameLabel">Qui êtes-vous ?</label>
+
+                <div class="nameChamps">
+
+                    <input type="text" class="nameInput" placeholder="Votre identifiant">
+
+                </div>
+
+            </div>
+
+            <div class="date">
+
+                <label for="date">Date des mesures :</label>
+
+                <div class="dateCheckbox">
+
+                    <input type="checkbox" name="date" id="date">
+                    <p>Entrer la date manuellement</p>
+
+                </div>
+                    
+                <div class="dateChamps">
+                
+                    <input type="date" name="date" id="date">
+
+                </div>
+
+            </div>
+
+            <div class="mensuration">
+                
+                <label for="Mensurations">Vos mensurations (en cm) :</label>
+
+                <div class="mensChamps">
+
+                    <input type="number" class="tour_taille" placeholder="Tour de Taille">
+                    <input type="number" class="poitrine" placeholder="Poitrine">
+                    <input type="number" class="ventre" placeholder="Ventre">
+                    <input type="number" class="hanches" placeholder="Hanches">
+                    <input type="number" class="cuisses" placeholder="Cuisses">
+
+                </div>
+
+            </div>
+            
+            <div class="poids">
+                
+                <label for="poids">Votre poids (en kg) :</label>
+
+                <div class="poidsChamps">
+
+                    <input type="number" class="poidsInput" placeholder="Poids">
+
+                </div>
+
+            </div>
+
+            <div class="submit">
+
+                <input type="submit" value="OK" class="submitBtn">
+
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
